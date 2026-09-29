@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "server.js",
+      "IT-HANDOFF.md",
+      "package.json",
+      "package-lock.json"
+    ]
+  }
+}
