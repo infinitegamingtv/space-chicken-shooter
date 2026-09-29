@@ -257,7 +257,7 @@
 
   <!-- Preloaded Iframe Container (Hidden during lobby, active during play) -->
   <div id="iframe-container">
-    <iframe id="game-iframe" src="./game.html" title="Trò chơi Bắn gà Vũ trụ"></iframe>
+    <iframe id="game-iframe" title="Trò chơi Bắn gà Vũ trụ"></iframe>
   </div>
 
   <!-- Floating HUD for student while playing -->
@@ -373,6 +373,9 @@
           }
         }
       });
+
+      // Safely start loading the iframe ONLY AFTER the message listener is ready
+      gameIframe.src = './game.html';
 
       // Try sending learner-safe content to game iframe
       function trySendContentToGame() {
